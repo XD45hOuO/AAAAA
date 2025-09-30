@@ -12,6 +12,9 @@ export default function Navbar() {
           <NavLink to="/" end className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}>Home</NavLink>
           <NavLink to="/posts" className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}>Posts</NavLink>
           <NavLink to="/about" className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}>About</NavLink>
+          <NavLink to="/inequality" className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}>Inequality</NavLink>
+          <NavLink to="/scoreboard" className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}>Scoreboard</NavLink>
+          <NavLink to="/rating" className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}>Rating</NavLink>
         </nav>
       </div>
     </header>
