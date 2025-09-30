@@ -11,12 +11,14 @@ function App() {
   return (
     <>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/posts" element={<Posts />} />
-        <Route path="/posts/:slug" element={<PostDetail />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
+      <div className="main">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/posts" element={<Posts />} />
+          <Route path="/posts/:slug" element={<PostDetail />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
       <Footer />
     </>
   )
