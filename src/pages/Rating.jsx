@@ -132,6 +132,18 @@ export default function Rating() {
               <input type="number" step="0.01" value={targetR} onChange={e => setTargetR(e.target.value)} />
             </label>
         </div>
+        <div style={{ display: 'grid', gap: 8, gridTemplateColumns: 'repeat(3, minmax(0, 1fr))' }}>
+          <label className="input">
+            <span>快速選擇目標 R</span>
+            <select className="input" value={targetR} onChange={e => setTargetR(e.target.value)}>
+              <option value="16.00">彩 (16.00)</option>
+              <option value="15.25">鉑 (15.25)</option>
+              <option value="14.50">金 (14.50)</option>
+              <option value="13.25">銀 (13.25)</option>
+              <option value="12.00">銅 (12.00)</option>
+            </select>
+          </label>
+        </div>
         <div className="card">
           <div>R 值：</div>
           <div style={{ fontSize: 32, fontWeight: 700 }}>{rating.toFixed(2)}</div>
